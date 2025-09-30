@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long a, b, summa1, summa2, summa3, answer;
+    summa1 = 1;
+    summa2 = 1;
+    summa3 = 1;
+    cin >> a;
+    cin >> b;
+    for(int i = 0; i <= a; i++){
+        summa1 = summa1 * i;
+        cout << summa1;
+    }
+    for(int i = 0; i <= b; i++){
+        summa2 = summa2 * i;
+        cout << summa2;
+    }
+    for(int i = 0; i <= a - b; i++){
+        summa3 = summa3 * i;
+        cout << summa3;
+    }
+    answer = summa1 / (summa2 * summa3);
+    cout << answer;
+    return 0;
+}
